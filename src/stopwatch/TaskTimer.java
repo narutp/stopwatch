@@ -2,9 +2,7 @@ package stopwatch;
 
 public class TaskTimer {
 
-	public TaskTimer() {
-
-	}
+	public TaskTimer() {}
 
 	public static void measureAndPrint(Runnable runnable) {
 		Stopwatch timer = new Stopwatch();

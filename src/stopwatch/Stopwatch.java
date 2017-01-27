@@ -25,31 +25,29 @@ public class Stopwatch {
 
 	public double getElapsed() {
 		// return elapsed time since start to current in seconds.
-		if (isRunning()) {
-			return (double)((System.nanoTime() - startTime) * NANOSECONDS);
-		} else {
-			return (double)((stopTime - startTime) * NANOSECONDS);
-		}
+		if (isRunning())
+			return (double) ((System.nanoTime() - startTime) * NANOSECONDS);
+		else
+			return (double) ((stopTime - startTime) * NANOSECONDS);
+
 	}
 
 	public boolean isRunning() {
-		if (isRunning) 
+		if (isRunning)
 			return true;
 		return false;
 	}
 
 	public void start() {
-		if (isRunning == false) {
+		if (isRunning == false)
 			startTime = System.nanoTime();
-			isRunning = true;
-		}
+		isRunning = true;
 	}
 
 	public void stop() {
-		if (isRunning == true) {
+		if (isRunning == true)
 			stopTime = System.nanoTime();
-			isRunning = false;
-		}
+		isRunning = false;
 	}
 
 }
