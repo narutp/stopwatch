@@ -23,7 +23,7 @@ public class Main {
 		System.out.println("*************************");
 		TaskTimer taskTimer = new TaskTimer();
 		taskTimer.measureAndPrint(new AppendStringTask(10000));
-		taskTimer.measureAndPrint(new AppendStringBuilderTask(10000));
+		taskTimer.measureAndPrint(new AppendStringBuilderTask(1000000));
 		taskTimer.measureAndPrint(new SumDoublePrimitive(1000000000));
 		taskTimer.measureAndPrint(new SumDouble(1000000000));
 		taskTimer.measureAndPrint(new SumBigDecimal(1000000000));

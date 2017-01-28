@@ -10,6 +10,10 @@ public class AppendStringTask implements Runnable {
 	/** count is a limit number to count*/
 	private int count;
 
+	/**
+	 * AppendStringTask constructor
+	 * @param count is a limit number to count.
+	 */
 	public AppendStringTask(int count) {
 		this.count = count;
 	}
